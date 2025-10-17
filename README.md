@@ -1,1 +1,12 @@
-# Sales Summary DashboardThis project displays a sales summary dashboard, reading data from a `data.csv` file.## Features- Fetches sales data from `data.csv`.- Calculates and displays the total sales.- Handles errors during data fetching or processing.## Setup1. Ensure you have a `data.csv` file in the same directory as `index.html`.2. The `data.csv` file must contain a header row, and one of the columns must be named `sales`.3. Open `index.html` in your web browser.## Data FormatThe `data.csv` file should be a comma-separated values file. Example:```csvproduct,sales,regionWidget A,150.75,NorthGadget B,200.00,SouthThing C,75.20,East```
+### Sales Summary Dashboard This dashboard displays a summary of sales data. It reads `data.csv`, calculates the total sales from the 'sales' column, and presents the sum. A value of 100 is subtracted from the total sales before display.
+
+#### Data Source
+- `data.csv`: A CSV file containing sales records. It must include a 'sales' column.
+
+#### How to Run
+1. Ensure `data.csv` is in the same directory as `index.html`.
+2. Open `index.html` in your web browser.
+
+#### Error Handling
+- Displays an error message if `data.csv` cannot be loaded or is malformed.
+- Handles cases where the 'sales' column is missing or sales values are non-numeric.
